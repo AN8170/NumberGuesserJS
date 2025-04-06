@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            h1 {text-align: center;}
+            p {text-align: center;}
+            div {text-align: center;}
+            </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>I'm Thinking Of a Number....</title>
+    </head>
+<body style="background-color:rgb(23, 21, 21);">
+    <h1 style="color:#ecf2f8;"> Guess the Number Game</h1>
+    <div id = "buttonSection" style="text-align: center;">
+        <button id = "Easy" onclick="startGame('Easy')">Start an Easy Game</button>
+        <button id = "Medium" onclick="startGame('Medium')">Start a Medium Game</button>
+        <button id = "Hard" onclick="startGame('Hard')">Start a Hard Game</button>
+        <button id = "Impossible"onclick="startGame('Impossible')">Start an Impossible Game</button><br>
+    </div>        
+
+    <div id = "inputSection" style="text-align: center; display: none">
+    <h1 id = "reminder" style="color:#ecf2f8;"> </h1>
+    <h1 id = "response" style="color:#ecf2f8;"> </h1>    
+    <label style="color:#ecf2f8;">Guess:</label><b></b>
+    <input id="guess">
+    <button id = "submitter" >submit</button>
+    <button id="playAgain" style="display: none;">Try Again</button>
+    </div>
+    <script src="js/guesser.js"></script>
+    
+
+    
+</body>
+</html>
